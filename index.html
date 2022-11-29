@@ -8,7 +8,12 @@
     <meta name="description" content="Portfolio for world-renowned software engineer Boram Lee">
     <meta name="author" content="Boram Lee">
     <link rel="icon" type="image/png" href="imgs/favicon.png" />
+
+    <!-- 무료icon 적용하기 -->
     <script src="https://kit.fontawesome.com/24a94e1bce.js" crossorigin="anonymous"></script>
+    
+
+    <!-- 글씨체 적용하기 -->
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
     <!-- css(font-글씨체) : font-family: 'Open Sans', sans-serif;-->
 
@@ -43,50 +48,55 @@
         </section>
 
         <!-- About -->
-        <section id="about">
+        <section id="about" class="section">
             <h1>About Me</h1>
             <p>I can speak Japanese.<br/> So I can create a homepage in a wider user's language.<br/> I think I am a person who actively solves and learns even small problems.</p>
             <div class="about__majors">
                 <div class="major">
                     <div class="major__icon">
-                        <i class="fa-brands fa-html5"></i>
+                        <i class="fab fa-html5"></i>
                     </div>
-                    <div class="major__title">HTML</div>
+                    <h2 class="major__title">HTML</h2>
                     <div class="major__description">I well HTML and CSS best one</div>
                 </div>
 
                 <div class="major">
                     <div class="major__icon">
-                        <i class="fa-brands fa-js"></i>
+                        <i class="fab fa-js"></i>
                     </div>
-                    <div class="major__title">JavaScript</div>
+                    <h2 class="major__title">JavaScript</h2>
                     <div class="major__description">I love JavaScript</div>
                 </div>
 
                 <div class="major">
                     <div class="major__icon">
-                        <i class="fa-brands fa-ts"></i>
+                        <!-- <i class="fas fa-server"></i> -->
+                        <i class="fab fa-react"></i>
                     </div>
-                    <div class="major__title">TypeScrpit</div>
-                    <div class="major__description">I can do TypeScrpit</div>
+                    <h2 class="major__title">react</h2>
+                    <div class="major__description">I can do react</div>
                 </div>
             </div>
             <div class="about__schools">
                 <div class="schools">
                     <img src="./imgs/schools/logo_korea_IT_academy.png" alt="Korea IT Academy logo" class="school__logo">
-                    <p class="school__name">Korea IT Academy</p>
-                    <p class="school__period">2020.12.09-2021.05.13 UI/UXCompletion of Engineering Training</p>
+                    <div class="job__description">
+                        <p class="school__name">Korea IT Academy</p>
+                        <p class="school__period">2020.12.09-2021.05.13 UI/UXCompletion of Engineering Training</p>
+                    </div>
 
                     <img src="./imgs/schools/logo_Korea Cyber University of Korea.png" alt="Korea Cyber University of Korea" class="school__logo">
-                    <p class="school__name">Korea Cyber University of Korea</p>
-                    <p class="school__period">2021.03. ~ 2023.08. Computer engineering education is under way</p>
+                    <div class="job__description">
+                        <p class="school__name">Korea Cyber University of Korea</p>
+                        <p class="school__period">2021.03. ~ 2023.08. Computer engineering education is under way</p>
+                    </div>
                 </div>
                 <div class="schools"></div>
             </div> 
         </section>
 
         <!-- Skills -->
-        <section id="skills">
+        <section id="skills" class="section">
             <h1>Skills</h1>
             <h2>Skills & Attributes</h2>
             <p>
@@ -155,7 +165,7 @@
         </section>
         
         <!-- Work -->
-        <section id="work">
+        <section id="work" class="section">
             <h1>My Work</h1>
             <h3>Projects</h3>
             <div class="work__categories">
@@ -209,7 +219,7 @@
         </section>
     
         <!-- Testimonials(추천서) -->
-        <section id="testimonials">
+        <section id="testimonials" class="section">
             <h1>Testimonials</h1>
             <h3>See what they say about me</h3>
             <div class="testimonials">
