@@ -510,4 +510,33 @@ p {
         width: 100%;
         display: none;
     }
+
+    .about__majors {
+        flex-direction: column;
+    }
+    .major {
+        margin-bottom: 38px;
+    }
+
+    .schools {
+        flex-direction: column;
+    }
+
+    .school__logo {
+        width: 80px;
+        height: 80px;
+    }
+
+    .skillset {
+        flex-direction: column;
+    }
+
+    .project {
+        flex-grow: 1;
+    }
+
+    .testimonial__avatar {
+        width: 80px;
+        height: 80px;
+    }
 }
