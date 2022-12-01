@@ -32,7 +32,7 @@ navbarMenu.addEventListener('click', (event) => {
 const homeContactBtn = document.querySelector('.home__contact');
 homeContactBtn.addEventListener('click', () => {
   scrollIntoView('#contact');
-})
+});
 
 // Make home slowly fade to transparent as the window scrolls down
 const home = document.querySelector('.home__container');
@@ -41,13 +41,31 @@ document.addEventListener('scroll', () => {
   console.log(`homeHeight: ${homeHeight}`);
   console.log(1 - window.scrollY / homeHeight);
   home.style.opacity = 1 - window.scrollY / homeHeight;
+});
+
+
+// Show "arrow up" button when scrolling down
+const arrowUp = document.querySelector('.arrow-up')
+document.addEventListener('scroll', () => {
+  if(window.scrollY > homeHeight / 2) {
+    arrowUp.classList.add('visible');
+  } else {
+    arrowUp.classList.remove('visible');
+  }
+});
+
+
+// Handle click on the "arrow up" button
+arrowUp.addEventListener('click', () => {
+  scrollIntoView('#home')
 })
+
 
 
 function scrollIntoView(selector) {
   const scrollTo = document.querySelector(selector);
   scrollTo.scrollIntoView({behavior: "smooth"});
-}
+};
 
 //-------------------------아래는 내가 힘으로 해결한 것------------------------------------
 // const contact_btn = document.querySelector('.home__contact');
