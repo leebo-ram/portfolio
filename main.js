@@ -24,6 +24,30 @@ navbarMenu.addEventListener('click', (event) => {
   }
   console.log(event.target.dataset.link);
 
-  const scrollTo = document.querySelector(link);
-  scrollTo.scrollIntoView({behavior: "smooth"});
+  scrollIntoView(link);
 });
+
+
+// Handle click on "contact me" button on home
+const homeContactBtn = document.querySelector('.home__contact');
+homeContactBtn.addEventListener('click', () => {
+  scrollIntoView('#contact');
+})
+
+function scrollIntoView(selector) {
+  const scrollTo = document.querySelector(selector);
+  scrollTo.scrollIntoView({behavior: "smooth"});
+}
+
+//-------------------------아래는 내가 힘으로 해결한 것------------------------------------
+// const contact_btn = document.querySelector('.home__contact');
+// contact_btn.addEventListener('click', (event) => {
+//   console.log(event.target.dataset.link);
+//   const target = event.target;
+//   const link = target.dataset.link;
+
+//   const scrollTo = document.querySelector(link);
+//   scrollTo.scrollIntoView({behavior: "smooth"});
+// });
+// --------------------------------------------------------------------------------------
+
