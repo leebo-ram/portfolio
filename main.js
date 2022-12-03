@@ -88,8 +88,6 @@ workBtnContainer.addEventListener('click', (e) => {
 });
 
 
-
-
 function scrollIntoView(selector) {
   const scrollTo = document.querySelector(selector);
   scrollTo.scrollIntoView({ behavior: 'smooth' });
@@ -109,11 +107,11 @@ function scrollIntoView(selector) {
 // --------------------------------------------------------------------------------------
 
 
-// --------------------------아래는 내가 응용해서 해결 한 것-------------------------------
-const toggleBtn = document.querySelector('.navbar__toggle-btn');
-const menu = document.querySelector('.navbar__menu');
+// // --------------------------아래는 내가 응용해서 해결 한 것-------------------------------
+// const toggleBtn = document.querySelector('.navbar__toggle-btn');
+// const menu = document.querySelector('.navbar__menu');
 
-toggleBtn.addEventListener('click', () => {
-  menu.classList.toggle('active');
-});
+// toggleBtn.addEventListener('click', () => {
+//   menu.classList.toggle('active');
+// });
 // --------------------------------------------------------------------------------------
